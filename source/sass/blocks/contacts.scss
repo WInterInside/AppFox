@@ -1,0 +1,29 @@
+.contacts {
+  display: flex;
+  gap: 30px;
+}
+
+.contacts__link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 170%;
+  padding-left: 28px;
+  transition: all .3s;
+
+  &--tel {
+    background-image: url("../img/svg/phone.svg");
+    background-position:  left center;
+    background-repeat: no-repeat;
+  }
+
+  &--mail {
+    background-image: url("../img/svg/mail.svg");
+    background-position:  left center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}

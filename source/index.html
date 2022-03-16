@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Fox</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display:wght@900&family=Roboto:wght@400;700;900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  <script>
+    // Picture element HTML5 shiv
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async=""></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo"></a>
+          <div class="contacts">
+            <a href="tel:+7(977)0000000" rel="nofollow" class="contacts__link contacts__link--tel">+7 977 000-00-00</a>
+            <a href="mailto:support@mail.ru" rel="nofollow" class="contacts__link contacts__link--mail">support@mail.ru</a>
+          </div>
+          <div class="header__menu">
+            <a href="#" class="header__link header__link--enter">Войти</a>
+            <a href="#" class="header__link header__link--partner">Cтать партнером</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="hero">
+
+        <div class="hero__balls"></div>
+        <div class="hero__bg"></div>
+        <div class="hero__img">
+          <div class="hero__ball hero__ball--top"></div>
+          <div class="hero__ball hero__ball--down"></div>
+          <picture>
+            <source type="image/webp" srcset="img/hero/hero-phone.webp">
+
+            <img class="hero__phone" src="img/hero/hero-phone.png" alt="mobile phone with app" width="288" height="585">
+          </picture>
+        </div>
+
+        <a class="hero__down"></a>
+      </section>
+
+      <div class="container">
+        <h1 class="main__title"></h1>
+      </div>
+    </main>
+
+    <footer class="footer">
+    </footer>
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

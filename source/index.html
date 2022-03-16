@@ -53,9 +53,11 @@
           <div class="hero__ball hero__ball--top"></div>
           <div class="hero__ball hero__ball--down"></div>
           <picture>
+            <source type="image/webp" media="(max-width: 550px)" srcset="img/hero/hero-phone-mob@1x.webp 1x, img/hero/hero-phone-mob@2x.webp 2x">
             <source type="image/webp" srcset="img/hero/hero-phone.webp">
 
-            <img class="hero__phone" src="img/hero/hero-phone.png" alt="mobile phone with app" width="288" height="585">
+            <source media="(max-width: 550px)" srcset="img/hero/hero-phone-mob@1x.png 1x, img/hero/hero-phone-mob@2x.png 2x">
+            <img class="hero__phone" src="img/hero/hero-phone.png"  alt="mobile phone with app" width="288" height="585">
           </picture>
         </div>
 

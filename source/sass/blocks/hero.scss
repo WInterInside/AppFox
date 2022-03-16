@@ -2,8 +2,22 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
-  min-height: 900px;
+  min-height: 950px;
   padding-top: 50px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    background-image: url("../img/hero/hero-tab-bg.png");
+    background-position:top  center;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
+    min-height: 325px;
+    background-image: unset;
+    background-color: #FFAB00;
+  }
 }
 
 .hero__bg {
@@ -16,6 +30,10 @@
   width: 6000px;
   border-radius: 48%;
   background-color: #FFAB00;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .hero__balls {
@@ -26,6 +44,10 @@
   background-image: url("../img/hero/hero-balls.png");
   background-position:  center;
   background-repeat: no-repeat;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .hero__img {
@@ -33,6 +55,18 @@
   z-index: 4;
   left: calc(50% - 144px);
   top: 100px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-width: 550px) {
+    display: block;
+    top: 60px;
+    left: calc(50% - 127px);
+    width: 254px;
+    height: 302px;
+  }
 }
 
 .hero__ball {
@@ -63,11 +97,22 @@
 
   background-position:  center;
   background-repeat: no-repeat;
+
+  @media (max-width: 796px) {
+    display: none;
+  }
 }
 
 .hero__phone {
   border-radius: 50px;
   box-shadow: 0px 0px 140px #FFFFFF;
+
+  @media (max-width: 768px) {
+    position: relative;
+    z-index: -1;
+    margin-top: -70px;
+    box-shadow: none;
+  }
 }
 
 .hero__down {
@@ -91,5 +136,9 @@
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media (max-width: 796px) {
+    display: none;
   }
 }

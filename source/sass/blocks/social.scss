@@ -17,6 +17,16 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+
+  @media (max-width: 796px) {
+    top: 100px;
+    right: 0;
+  }
+
+  @media (max-width: 550px) {
+    top: 80px;
+    right: 0;
+  }
 }
 
 .social__link {

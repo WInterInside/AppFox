@@ -35,6 +35,7 @@
     </header>
 
     <main class="main">
+      <h1 class="hidden">App Fox</h1>
 
       <section class="hero">
         <div class="container">
@@ -61,12 +62,130 @@
           </picture>
         </div>
 
-        <a class="hero__down"></a>
+        <a href="#call" class="hero__down"></a>
       </section>
 
-      <div class="container">
-        <h1 class="main__title"></h1>
-      </div>
+      <section class="download">
+        <div class="container">
+          <div class="download__wrapper">
+            <div class="download__img">
+              <picture>
+                <source type="image/webp" srcset="img/download/download-img@1x.webp">
+
+                <img class="download__phone" src="img/download/download-img@1x.png"  alt="mobile phone with app" width="288" height="585">
+              </picture>
+            </div>
+            <div class="download__content">
+              <h2 class="download__caption">Где <span>скачать</span></h2>
+              <p class="download__text">
+                Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню,
+                доставкой и возможностью предзаказа
+                Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню,
+                доставкой и возможностью предзаказа
+                Скачивайте приложение и создавайте свое виртуальное кафе с электронным меню,
+                доставкой и возможностью предзаказа
+              </p>
+              <div class="download__bttns">
+                <a href="#" aria-label="download from google play" class="download__link download__link--gp"></a>
+                <a href="#" aria-label="download from app store" class="download__link download__link--as"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="online">
+        <div class="online__img">
+          <picture>
+            <source type="image/webp" media="(max-width: 550px)" srcset="img/online/online-phone@1x.webp 1x, img/online/online-phone@2x.webp 2x">
+            <source type="image/webp" srcset="img/online/online-phone@1x.webp">
+
+            <img class="online__phone" src="img/online/online-phone@1x.png"  alt="mobile phone with app" width="160" height="338">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="online__content">
+            <h2 class="online__caption"><span class="online__colored">Ваши</span> <span class="online__icon">ЛЮБИМЫЕ</span>  РЕСТОРАНЫ <span class="online__icon-tab">онлайн</span></h2>
+
+            <h2 class="online__caption online__caption--mobile"><span class="online__colored">Ваши</span> <br> <span class="online__icon">ЛЮБИМЫЕ</span>  РЕСТОРАНЫ <span class="online__icon-tab">онлайн</span></h2>
+
+            <p class="online__text">
+               Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню,
+               доставкой и возможностью предзаказа Скачивайте приложение и создавайте свое виртуальное кафе  с электронным меню,
+               доставкой и возможностью предзаказа
+            </p>
+            <div class="online__data">
+              <div class="online__data-wrapper">
+                <span class="online__data-value">1740 +</span>
+                <span class="online__data-description">Скачиваний</span>
+              </div>
+              <div class="online__data-wrapper">
+                <span class="online__data-value">12 +</span>
+                <span class="online__data-description">Ресторанов</span>
+              </div>
+              <div class="online__data-wrapper">
+                <span class="online__data-value">до 90%</span>
+                <span class="online__data-description">Cкидки</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <div class="faq__wrapper">
+            <div class="faq__content">
+              <h2 class="faq__heading">Часто задаваемы <span>вопросы</span></h2>
+              <div class="faq__accordion">
+                <button class="accordion">Вопрос в несколько слов</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="accordion">Вопрос в несколько строк</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="accordion">Вопрос в несколько букв</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="accordion">Вопрос в несколько букв</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <button class="accordion">Вопрос в несколько букв</button>
+                <div class="panel">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="call" class="call">
+        <div class="container">
+          <form class="form" id="callme" action="" method="POST">
+            <h2 class="form__caption">Связаться с <span>нами</span></h2>
+            <p class="form__subcaption">Вы можете связаться с нами  по любому вопросу</p>
+            <div class="form__wrapper">
+              <label class="form__label">
+                <input class="form__input" type="text" name="name" id="name" placeholder="Ваше Имя" required="">
+              </label>
+              <label class="form__label">
+                <input class="form__input form__input--tel" id="tel" type="tel" name="number" placeholder="Телефон" required="">
+              </label>
+              <label class="form__label">
+                <input class="form__input form__input--mail" id="tel" type="email" name="mail" placeholder="E-mail" required="">
+              </label>
+              <button class="form__btn" type="submit">Отправить</button>
+            </div>
+            <p class="form__agreement" >Нажимая на кнопку “Отправить” вы соглашаетесь с <a class="form__link" href="#">политикой конфиденциальности</a>  </p>
+          </form>
+        </div>
+      </section>
+
     </main>
 
     <footer class="footer">

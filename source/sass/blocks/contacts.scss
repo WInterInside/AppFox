@@ -33,21 +33,42 @@
     font-size: 0;
     width: 24px;
     height: 24px;
+    border-radius: 3px;
   }
 
   &--tel {
     background-image: url("../img/svg/phone.svg");
     background-position:  left center;
     background-repeat: no-repeat;
+
+    @media (max-width: 796px) {
+      background-position: center center;
+    }
+
+    @media (max-width: 550px) {
+      background-position: center center;
+    }
   }
 
   &--mail {
     background-image: url("../img/svg/mail.svg");
     background-position:  left center;
     background-repeat: no-repeat;
+
+    @media (max-width: 796px) {
+      background-position: center center;
+    }
+
+    @media (max-width: 550px) {
+      background-position: center center;
+    }
   }
 
   &:hover {
     transform: scale(1.02);
+
+    @media (max-width: 550px) {
+      background-color: #3b3b3b74;
+    }
   }
 }
